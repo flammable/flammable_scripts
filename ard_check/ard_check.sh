@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ -z "$(netstat -n | grep '.5900')" ]
+if [ -z "$(/usr/sbin/netstat -n | grep '.5900')" ]
  then
      exit 0
  else
