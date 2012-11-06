@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ -z "$(pgrep -i vmware)" ]
+if [ -z "$(/usr/bin/pgrep -i vmware)" ]
  then
      exit 0
  else
