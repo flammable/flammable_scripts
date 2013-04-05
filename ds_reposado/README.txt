@@ -14,6 +14,6 @@ Suggested workflow order and settings:
 4.  Software update task.  Do not set a base URL.  Set checkboxes: Run Apple Software Update client at first boot, Automate.
 5.  Generic task: sus_set_apple.sh.  Set checkboxes: Postponed execution (command will be launched at first boot), Automate.
 6.  Generic task: sus_set_reposado_10.X.sh.  Set checkbox: Automate.
-7.  Generic task: set_boot_drive_reboot.sh.  Set checkbox: Automate.
+7.  Generic task: set_boot_drive_reboot.sh (get this from the ds_deploy folder).  Set checkbox: Automate.
 
 All of this was used with DeployStudio Server 1.0rc130.  Language, logic, and compatibility might have changed since then.  Hope this helps!
