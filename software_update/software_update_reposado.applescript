@@ -33,8 +33,9 @@ if answer is equal to "Reposado" then
 	else if OSVersion starts with "10.8" then
 		-- set up Mountain Lion thing
 		set catalogURLValue to "http://server.local/content/catalogs/others/index-mountainlion-lion-snowleopard-leopard.merged-1_BRANCHNAME.sucatalog"
-	else
-		--crap out, because it's Panther or less
+	else if OSVersion starts with "10.9" then
+		-- set up Mavericks thing
+		set catalogURLValue to "http://server.local/content/catalogs/others/index-10.9-mountainlion-lion-snowleopard-leopard.merged-1_BRANCHNAME.sucatalog"
 		return
 	end if
 	do shell script "defaults write /Library/Preferences/com.apple.SoftwareUpdate CatalogURL " & catalogURLValue with administrator privileges
