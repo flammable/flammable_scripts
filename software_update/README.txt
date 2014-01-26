@@ -6,6 +6,6 @@ An earlier version of this script was published at Mac OS X Hints:
 
 http://hints.macworld.com/article.php?story=20091002190708159
 
-On the Hints forums, tw and Hal Itosis helped to create the logic in this script.  Since the original version, I have added support for versions 10.7 and 10.8, the script outputs the current Software Update Server in the dialog box, and it fixes permissions on /Library/Preferences in the event that the current user can't write to that folder.
+On the Hints forums, tw and Hal Itosis helped to create the logic in this script.  Since the original version, I have added support for OS X versions up to (and including) 10.9, the script outputs the current Software Update Server in the dialog box, and it fixes permissions on /Library/Preferences in the event that the current user can't write to that folder.
 
 Included are two versions of the script: one for use with OS X Server, and another for use with Reposado.
