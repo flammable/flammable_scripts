@@ -1,1 +1,0 @@
-These are scripts that will hopefully be of use to other people (primarily, Mac sysadmins).

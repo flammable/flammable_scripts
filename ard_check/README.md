@@ -1,3 +1,6 @@
+ARD Check
+=======
+
 This script is designed to detect if an active Apple Remote Desktop view/control session is taking place.
 
 Thanks:
