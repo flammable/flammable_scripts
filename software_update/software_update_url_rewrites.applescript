@@ -15,7 +15,7 @@ if answer is equal to "Apple" then
 end if
 
 if answer is equal to "Server" then
-	set catalogURLValue to "http://server.local:8088/index.sucatalog"
+	set catalogURLValue to "http://server.local:8088/index_BRANCHNAME.sucatalog"
 	do shell script "defaults write /Library/Preferences/com.apple.SoftwareUpdate CatalogURL " & catalogURLValue with administrator privileges
 	display dialog "Done!  The Software Update Server is set to Server." buttons {"OK"} default button 1
 end if
