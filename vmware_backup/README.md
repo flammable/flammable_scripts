@@ -1,1 +1,0 @@
-Moved to [https://github.com/flammable/vmware_backup](https://github.com/flammable/vmware_backup)
