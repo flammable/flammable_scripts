@@ -5,6 +5,11 @@ These are scripts that will hopefully be of use to other people (primarily, Mac 
 
 More resources available [at my blog](https://mikesolin.com).
 
+## git_update
+=======
+
+This script is used for updating multiple Git repositories.
+
 ## imagesort
 =======
 
