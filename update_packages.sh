@@ -18,46 +18,51 @@ else
  brew="/usr/local/bin/brew"
 fi
 
+# update homebrew
+if [ -e ${brew} ]; then
+ ${brew} update
+ ${brew} upgrade
+ ${brew} cleanup
+else
+ ${echo} "Homebrew not found."
+fi
+
 if [ "${processor_type}" == "arm64" ]; then
  az="/opt/homebrew/bin/az"
 else
  az="/usr/local/bin/az"
 fi
 
-# update homebrew
-if [ -e ${brew} ]; then
-${brew} update
-${brew} upgrade
-${brew} cleanup
-fi
-
 # update az cli
 if [ -e ${az} ]; then
-${az} upgrade
-fi
-
-# check if python is installed
-if [ ! -e ${pip3} ]; then
- ${echo} "Please install Python to use pip and pre-commit."
+ ${az} upgrade
+else
+ ${echo} "az command not found."
 fi
 
 # update pip
 if [ -e ${pip3} ]; then
-${pip3} install --upgrade pip
+ ${pip3} install --upgrade pip
+else
+ ${echo} "Please install Python to use pip."
 fi
 
 # update pre-commit
 if [ -e ${pip3} ]; then
-${pip3} install pre-commit
-${find} ~/Documents -type f -name ".pre-commit-config.yaml"  -execdir ${pwd} \; -execdir ${precommit} autoupdate \;
+ ${pip3} install pre-commit
+ ${find} ~/Documents -type f -name ".pre-commit-config.yaml" -execdir ${pwd} \; -execdir ${precommit} autoupdate \;
+else
+  ${echo} "Please install Python to use pre-commit."
 fi
 
 # update macports
 if [ -e ${port} ]; then
-${sudo} ${port} selfupdate
-${sudo} ${port} upgrade outdated
-${sudo} ${port} uninstall inactive
-${sudo} ${port} uninstall leaves
+ ${sudo} ${port} selfupdate
+ ${sudo} ${port} upgrade outdated
+ ${sudo} ${port} uninstall inactive
+ ${sudo} ${port} uninstall leaves
+else
+  ${echo} "MacPorts not found."
 fi
 
 exit
