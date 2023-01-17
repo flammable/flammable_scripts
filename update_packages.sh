@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# This updates Homebrew, MacPorts, the az command, and pre-commit (if any of these are installed). Also, cleans up afterwards.
+
 echo="/bin/echo"
 find="/usr/bin/find"
 pip3="/usr/local/bin/pip3"

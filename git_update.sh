@@ -1,6 +1,7 @@
 #!/bin/bash
 
-# modified from:
+# This script is used for updating multiple Git repositories.
+# Modified from:
 # http://sixarm.com/about/git-pull-for-many-repository-directories.html
 
 dirname="/usr/bin/dirname"
