@@ -7,13 +7,13 @@ if answer is equal to "Yes" then
 			activate
 			set current pane to pane "com.apple.preference.mouse"
 		end tell
-		
+
 		tell application "System Events"
 			tell process "System Preferences"
 				click checkbox 1 of window "Mouse"
 			end tell
 		end tell
-		
+
 		tell application "System Preferences"
 			quit
 		end tell
