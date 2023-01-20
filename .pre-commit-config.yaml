@@ -1,0 +1,13 @@
+repos:
+- repo: https://github.com/homebysix/pre-commit-macadmin
+  rev: v1.12.3
+  hooks:
+  - id: check-plists
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v4.4.0
+  hooks:
+  - id: check-case-conflict
+  - id: check-merge-conflict
+  - id: check-shebang-scripts-are-executable
+  - id: end-of-file-fixer
+  - id: trailing-whitespace
