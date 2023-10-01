@@ -63,6 +63,7 @@ if [ -e ${port} ]; then
  ${sudo} ${port} upgrade outdated
  ${sudo} ${port} uninstall inactive
  ${sudo} ${port} uninstall leaves
+ ${sudo} ${port} reclaim
 else
   ${echo} "MacPorts not found."
 fi
