@@ -1,6 +1,6 @@
 repos:
 - repo: https://github.com/homebysix/pre-commit-macadmin
-  rev: v1.18.0
+  rev: v1.19.0
   hooks:
   - id: check-plists
 - repo: https://github.com/pre-commit/pre-commit-hooks
