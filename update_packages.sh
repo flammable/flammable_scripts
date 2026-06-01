@@ -52,7 +52,7 @@ fi
 # update pre-commit
 if [ -e ${pip3} ]; then
  ${pip3} install pre-commit
- ${find} ~/Documents -type f -name ".pre-commit-config.yaml" -execdir ${pwd} \; -execdir ${precommit} autoupdate \;
+ ${find} ~/git_repos -type f -name ".pre-commit-config.yaml" -execdir ${pwd} \; -execdir ${precommit} autoupdate \;
 else
   ${echo} "Please install Python to use pre-commit."
 fi
